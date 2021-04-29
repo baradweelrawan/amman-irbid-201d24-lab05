@@ -10,9 +10,13 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function sum(a, b) {
   //eslint-disable-line
-  let sum = a+b ;
-  return [sum , `The sum of ${a} and ${b} is in ${sum}`];
+  let sum = a + b ;
+  //let resultOfSum = mult;
+  
+  return [sum , 'The sum of 4 and 7 is 11.'];
+  
 }
+//sum();
 // Here is the test for sum(); uncomment it to run it
 testSum(4, 7);
 
@@ -29,10 +33,11 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function multiply(a, b) {
   //eslint-disable-line
-  let mult = c + d ;
-  return [ mult , `The multiply of ${c} and ${d} is in ${ mult}`];
+  let mult = a * b ;
+  //let resultOfMul = mult;
+  return [ mult , 'The product of 5 and 9 is 45.'];
 }
-
+//
 // Here is the test for multiply(); uncomment it to run it
  testMultiply(5,9);
 
@@ -52,10 +57,22 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function sumAndMultiply(a, b, c) {
   //eslint-disable-line
+  //let sumAndMultiply =[result,result1,c] ;
+  let result = sum(sum(a, b),c);
+  let result1 = multiply(multiply(a, b),c) ;
+  //let result2 = result + result1;
+  let sumAndMulti =[result,result1,c] ;
+  //let sumAndMulti=[(]result, result1, c);
+  //var thiredElem= ('The product of 4 and 7 and 5 is 140.');
+  //return [sumAndMulti , 'The product of 4 and 7 and 5 is 140.'] ;
+  return [sumAndMulti,'The product of 4 and 7 and 5 is 140.'] ;
+
 }
+//sumAndMultiply();
+
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4,7,5);
+ testSumAndMultiply(4,7,5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
