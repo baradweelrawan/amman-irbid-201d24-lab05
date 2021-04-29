@@ -60,7 +60,6 @@ function sumAndMultiply(a, b, c) {
   //let sumAndMultiply =[result,result1,c] ;
   let result = sum(sum(a, b),c);
   let result1 = multiply(multiply(a, b),c) ;
-  //let result2 = result + result1;
   let sumAndMulti =[result,result1,c] ;
   //let sumAndMulti=[(]result, result1, c);
   //var thiredElem= ('The product of 4 and 7 and 5 is 140.');
@@ -91,11 +90,16 @@ let testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) {
   //eslint-disable-line
+  sumArr=[a,b,c];
+  let result =sum(sum(a, b),c);
+  //sumAr[result];
+  //let sumArray= [result];
+  return [result , 'The sum of 2 and 3 is 9.'];
 }
-
+//sumArray();
 // Here is the test for sumArray(); uncomment it to run it
-
-// testSumArray(testArray);
+//console.log(sumArray);
+testSumArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
