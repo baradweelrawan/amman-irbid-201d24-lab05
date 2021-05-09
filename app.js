@@ -58,8 +58,8 @@ Test this function by hand in the console to get it working, and when you think 
 function sumAndMultiply(a, b, c) {
   //eslint-disable-line
   //let sumAndMultiply =[result,result1,c] ;
-  let result = sum(sum(a, b),c);
-  let result1 = multiply(multiply(a, b),c) ;
+  let result = sum(sum(a, b) [0], c) [0];
+  let result1 = multiply(multiply(a, b),c)[1] ;
   //let sumAndMulti =[result,result1] ;
   //let sumAndMulti=[(]result, result1, c);
   //var thiredElem= ('The product of 4 and 7 and 5 is 140.');
@@ -89,11 +89,13 @@ let testArray = [2, 3, 4]; //eslint-disable-line
 function sumArray(sumArr) {
   //eslint-disable-line
   //sumArr=[a,b,c];
-  let resultOfSum =sum(sum(a, b),c);
+  let resultOfSum =sum(sum(a, b) [0],c);
   //sumAr[result];
   //let sumArray= [result];
   //let sumofarr =[esultOfSum,c] 
-  return [resultOfSum , 'The sum of 2 and 3 is 9.'];
+  return [resultOfSum];
+
+  
 }
 //sumArray();
 // Here is the test for sumArray(); uncomment it to run it
